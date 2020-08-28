@@ -1,0 +1,309 @@
+.mainPage{
+    .back{
+        .gradient{
+            position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%);
+        
+        }
+        z-index: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(./../../assets/images/main-back.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    }
+
+    height: 100%;
+    align-items: center;
+    .head{
+        color: #fff;
+        text-align: center;
+        padding-top: 30px;
+        z-index: 1;
+        position: relative;
+    }
+    .meal{
+        display: grid;
+        
+        @media(min-width: 711px){
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 80px;
+
+        }
+        @media(min-width: 1024px){
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+        grid-gap: 80px 50px;
+        grid-template-columns: 1fr;
+        margin: 20px 40px;
+        .food{
+            position: relative;
+            &:last-child{
+            @media(min-width: 711px){
+            grid-column: 1/3;
+            justify-self: center;
+            }
+            @media(min-width: 1024px){
+                grid-column: initial;
+                justify-self: center;
+                }
+            
+        }
+            &.select{
+                .food_container{
+                    background: linear-gradient(-224deg, #D91667 23px, #F2F2F2 0px); 
+                    border: 4px solid #D91667;
+                    .count{
+                        .circle{
+                            background-color: #D91667;
+                            border-radius: 50%;
+                            z-index: 99;
+                            min-width: 80px;
+                            min-height: 80px;
+                            @media(min-width: 1596px){
+                                min-width: 100px;
+                            min-height: 100px;
+                                }
+                            .weigth{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                            color: #fff
+                        }
+                    }
+                    
+                }
+                &:hover{
+                    .food_container{
+                        background: linear-gradient(-224deg, #E52E7A 23px, #F2F2F2 0px); 
+                        border: 4px solid #E52E7A;
+                        .count{
+                            .circle{
+                                background-color: #E52E7A;
+                                border-radius: 50%;
+                                z-index: 99;
+                                min-width: 80px;
+                                min-height: 80px;
+                                @media(min-width: 1596px){
+                                    min-width: 100px;
+                                min-height: 100px;
+                                    }
+                                .weigth{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                                color: #fff
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            &.disable{
+                &::before{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: rgba(204, 204, 204, 0.557);
+                    top: 0;
+                    left: 50%;
+                    clip-path: polygon(33px 0, 100% 0, 100% 100%, 0 100%, 0 33px);           
+                    z-index: 120;
+                    border-radius: 12px;
+                    max-width: 300px;
+                    margin: 0 auto;
+                    transform: translateX(-50%);
+                }
+                
+                &:hover{
+                    .food_container{
+                        background: linear-gradient(-224deg, #000 23px, #F2F2F2 0px); 
+                        border: 4px solid #000;
+                        .count{
+                            .circle{
+                                background-color: #000;
+                                border-radius: 50%;
+                                z-index: 99;
+                                min-width: 80px;
+                                min-height: 80px;
+                                @media(min-width: 1596px){
+                                    min-width: 100px;
+                                min-height: 100px;
+                                    }
+                                .weigth{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                                color: #fff
+                            }
+                        }
+                        
+                    }
+                } .food_container{
+                    background: linear-gradient(-224deg, #000 23px, #F2F2F2 0px); 
+                    border: 4px solid #000;
+                    .count{
+                        .circle{
+                            background-color: #000;
+                            border-radius: 50%;
+                            z-index: 99;
+                            min-width: 80px;
+                            min-height: 80px;
+                            @media(min-width: 1596px){
+                                min-width: 100px;
+                            min-height: 100px;
+                                }
+                            .weigth{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                
+                            }
+                            color: #fff
+                        }
+                    }
+                    
+                }
+            }
+            &:hover{
+                .food_container{
+                    background: linear-gradient(-224deg, #2EA8E6 23px, #F2F2F2 0px); 
+                    border: 4px solid #2EA8E6;
+                    .count{
+                        .circle{
+                            background-color: #2EA8E6;
+                            border-radius: 50%;
+                            z-index: 99;
+                            min-width: 80px;
+                            min-height: 80px;
+                            @media(min-width: 1596px){
+                                min-width: 100px;
+                            min-height: 100px;
+                                }
+                            .weigth{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                            color: #fff
+                        }
+                    }
+                    
+                }
+
+ 
+            }
+            cursor: pointer;
+            height: 100%;
+        .food_container{
+            background: linear-gradient(-224deg, #1698D9 23px, #F2F2F2 0px); 
+            clip-path: polygon(33px 0, 100% 0, 100% 100%, 0 100%, 0 33px);           
+            height: 100%;
+            display: grid;
+            position: relative;
+
+            .food_head{
+                h1{
+                    line-height: 1;
+                    padding-top: 10px;
+                }
+                h2{
+                    padding-bottom: 10px;
+                }
+                p{
+                    color: #666666;
+                }
+                padding-top: 20px;
+                .hover{
+                    color: #D91667;
+                }
+            }
+            text-align: left;
+            overflow: hidden;
+
+            padding: 10px 20px;
+            border: 4px solid #1698D9;
+            border-radius: 12px;
+            box-sizing: border-box;
+            color: #000;
+            max-width: 300px;
+            margin: 0 auto;
+            .count{
+                margin-top: -45%;
+                height: 100%;
+                position: relative;
+                img{
+                    width: 160%;
+                    transform: translate(-20%, 30%);
+                    
+                }
+                .circle{
+                    position: absolute;
+                    bottom: -30%;
+                    right: 0;
+                    text-align: center;
+                    background-color: #1698D9;
+                    border-radius: 50%;
+                    z-index: 99;
+                    min-width: 80px;
+                    min-height: 80px;
+                    @media(min-width: 1596px){
+                        min-width: 100px;
+                    min-height: 100px;
+                        }
+                    .weigth{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    color: #fff
+                }
+            }
+        }
+        color: #fff;
+        text-align: center;
+        .description{
+            padding: 10px 20px;
+            p{
+                a{
+                    color: #1698D9;
+                    text-decoration: underline;
+                }
+            }
+           
+            align-self: end;
+            .dis_description{
+                color: #FFFF66;
+            }
+        }
+    }
+    }
+}
+
+
