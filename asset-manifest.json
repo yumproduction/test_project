@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/github.com/test_project/static/css/main.1f2e21c3.chunk.css",
+    "main.js": "/github.com/test_project/static/js/main.64449095.chunk.js",
+    "main.js.map": "/github.com/test_project/static/js/main.64449095.chunk.js.map",
+    "runtime-main.js": "/github.com/test_project/static/js/runtime-main.786a272f.js",
+    "runtime-main.js.map": "/github.com/test_project/static/js/runtime-main.786a272f.js.map",
+    "static/js/2.6c9bf8bb.chunk.js": "/github.com/test_project/static/js/2.6c9bf8bb.chunk.js",
+    "static/js/2.6c9bf8bb.chunk.js.map": "/github.com/test_project/static/js/2.6c9bf8bb.chunk.js.map",
+    "index.html": "/github.com/test_project/index.html",
+    "precache-manifest.2c1f7ff25a0eb2484bfae40b01036714.js": "/github.com/test_project/precache-manifest.2c1f7ff25a0eb2484bfae40b01036714.js",
+    "service-worker.js": "/github.com/test_project/service-worker.js",
+    "static/css/main.1f2e21c3.chunk.css.map": "/github.com/test_project/static/css/main.1f2e21c3.chunk.css.map",
+    "static/js/2.6c9bf8bb.chunk.js.LICENSE.txt": "/github.com/test_project/static/js/2.6c9bf8bb.chunk.js.LICENSE.txt",
+    "static/media/common.scss": "/github.com/test_project/static/media/Exo-Bold.c30bdd28.ttf",
+    "static/media/Exo-Thin.otf": "/github.com/test_project/static/media/Exo-Thin.44bde874.otf",
+    "static/media/cat.png": "/github.com/test_project/static/media/cat.4b9ef23f.png",
+    "static/media/food.module.scss": "/github.com/test_project/static/media/main-back.3d7e1ad7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.786a272f.js",
+    "static/js/2.6c9bf8bb.chunk.js",
+    "static/css/main.1f2e21c3.chunk.css",
+    "static/js/main.64449095.chunk.js"
+  ]
+}
