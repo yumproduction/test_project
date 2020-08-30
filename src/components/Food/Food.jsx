@@ -11,14 +11,12 @@ const Food = (props) => {
     let food = props.meal.food.map((f, index) => <div onMouseEnter={() => props.setHovered(f.id, true)}
         onMouseLeave={() => props.setHovered(f.id, false)} onClick={() => f.inStock && props.setSelected(f.id)} key={`${f}_${index}`}
         className={cn(classes.food,
-            {[classes.disable]: f.inStock === false,
+            {
+                [classes.disable]: f.inStock === false,
                 [classes.select]: f.selected === true
             })}>
-                <div className={classes.corner}>
-
-</div>
         <div className={classes.food_container}>
-            
+            <div className={classes.corner}></div>
             <div className={classes.food_head}>
                 <p className={f.selected && f.hovered ? classes.hover : ''}>{f.selected && f.hovered ? 'Котэ не одобряет?' : 'Сказочное заморское'}</p>
                 <h1>Нямушка</h1>
