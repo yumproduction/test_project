@@ -15,8 +15,8 @@ const Food = (props) => {
                 [classes.disable]: f.inStock === false,
                 [classes.select]: f.selected === true
             })}>
+        <div className={classes.corner}></div>
         <div className={classes.food_container}>
-            <div className={classes.corner}></div>
             <div className={classes.food_head}>
                 <p className={f.selected && f.hovered ? classes.hover : ''}>{f.selected && f.hovered ? 'Котэ не одобряет?' : 'Сказочное заморское'}</p>
                 <h1>Нямушка</h1>
